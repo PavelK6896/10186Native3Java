@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<HBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="app.web.pavelk.native3.HelloController">
+
+    <BorderPane id="BorderPane" xmlns:fx="http://javafx.com/fxml/1">
+        <top>
+            <VBox>
+                <Label fx:id="timeOne" text="0"/>
+            </VBox>
+        </top>
+        <left>
+            <HBox>
+                <BorderPane.margin>
+                    <Insets left="15" right="15" top="15"/>
+                </BorderPane.margin>
+                <Label>
+                    <padding>
+                        <Insets top="5" right="5"/>
+                    </padding>
+                    <text>
+                        Text:
+                    </text>
+                </Label>
+            </HBox>
+        </left>
+        <center>
+            <Label prefHeight="150.0" prefWidth="426.0" fx:id="welcomeText" BorderPane.alignment="CENTER"/>
+        </center>
+        <right>
+            <VBox fillWidth="35.0">
+                <Button text="Hello!" onAction="#onHelloButtonClick"/>
+                <Button text="Two!" onAction="#buttonTwo"/>
+            </VBox>
+        </right>
+    </BorderPane>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+</HBox>
